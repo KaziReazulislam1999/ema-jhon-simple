@@ -3,14 +3,20 @@ import fakeData from "../../fakeData";
 import { useState } from "react";
 import "./Shop.css";
 import Product from "../Product/Product";
+
 const Shop = () => {
   const first10 = fakeData.slice(0, 15);
   const [products, setproducts] = useState(first10);
+
+  const handlerAddProduct = (product) => {
+    console.log("Product Added", product);
+  };
+
   return (
     <div className='shop-container'>
       <div className='product-container'>
         {products.map((pd) => (
-          <Product product={pd}></Product>
+          <Product handlerAddProduct={handlerAddProduct} product={pd}></Product>
         ))}
       </div>
 

@@ -19,6 +19,10 @@
   border-radius: 20px;
   outline: none;
 }
+
 .main-btn:hover {
   background-color: gray;
+}
+.fa-shopping-cart {
+  margin-right: 5px;
 }
