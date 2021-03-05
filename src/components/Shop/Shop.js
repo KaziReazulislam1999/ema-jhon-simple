@@ -10,7 +10,6 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
 
   const handlerAddProduct = (product) => {
-    console.log("Product Added", product);
     const newCart = [...cart, product];
     setCart(newCart);
   };

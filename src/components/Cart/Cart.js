@@ -24,10 +24,9 @@ const cart = (props) => {
   }
   return (
     <div>
-      <h4>Order Summery</h4>
+      <h4 className='bg btn-danger p-3 rounded'>Order Summery</h4>
       <p>Items Ordered:{cart.length}</p>
       <p>Product Price :{formateNumber(total)}</p>
-
       <p>
         <small>Shipping Cost : {formateNumber(shipping)}</small>
       </p>
